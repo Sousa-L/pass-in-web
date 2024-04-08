@@ -152,7 +152,7 @@ export function AttendeeList() {
                         </TableCell>
                         <TableCell className='text-right' colSpan={3}>
                             <div className='inline-flex items-center gap-8'>
-                                <span>Página {page} de {Math.ceil(totalPages)}</span>
+                                <span>Página {page.valueOf()} de {Math.ceil(totalPages)}</span>
                                 <div className='flex gap-1.5'>
                                     <IconButton onClick={gotToFirstPage} disabled={page === 1}>
                                         <ChevronsLeft className='size-4' />
